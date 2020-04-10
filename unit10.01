@@ -1,0 +1,18 @@
+import re
+
+1. Construct a regular expression that matches each of these (one regular expression per item). You do not need to include the contents of an entire script for each of these; rather, include just the line with the regular expression. For example, if you are asked to match "cat or hat", you could simply answer: r”(c|h)at” 
+
+a. at least one b followed by any number (zero or more) of c's
+Answer: r”b+c*”
+
+b. any number (one or more) of literal backslashes followed by any number (zero or more) of literal asterisks
+Answer: r”\\+\**”
+
+c. three consecutive copies of whatever text is contained in the whatever variable
+Answer: r”\w{3,}”
+
+d. any five characters (they don't have to be the same, and this includes newline as a valid character option)
+Answer: r”\.\-\+\(\)”
+
+e. [Challenging!] the same word written two or more times in a row (with possible varying intervening whitespace), where "word" is defined as a non-empty sequence of non-whitespace characters. No points off if you don't get this one, I'm just looking to be impressed.
+Answer: r”word{2,}”
