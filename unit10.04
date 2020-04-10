@@ -1,0 +1,4 @@
+import re
+
+sentence = “The quarantined, confused programmer tries to learn regular expressions.”
+re.sub('(\w+)\s*,\s*(\w+)', '\\2, \\1', sentence)
