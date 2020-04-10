@@ -1,0 +1,15 @@
+#Write a program that loops through lines of a file, assuming each line of input will consist of just a single word (and a newline, of course). As it loops through each line, your program should print out any words that contain two vowels next to each other. The vowels do not have to be the same. You should create a test input file and make your script process it.
+
+import re
+
+Text = “aardvark
+	  Bee
+	  Cat
+	  Door
+	  Elephant” 
+
+a = re.search(“([aeiou])\1”, Text)
+If a:
+     Print(“Match found {0}”.format(a)
+Else:
+     Print(“No match found”)
